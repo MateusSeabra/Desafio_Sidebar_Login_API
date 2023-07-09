@@ -61,8 +61,8 @@ label {
     gap: 20px;
     background-color: #24221F;
     border-radius: 5px;
-    width: 80%;
-    height: 70%;
+    width: 430px;
+    height: 400px;
 }
 
 .login > * {
@@ -121,7 +121,7 @@ label {
 
 .inner4 {
     display: flex;
-    width: 60%;
+    width: 315px;
     justify-content: space-between;
 }
 
@@ -175,7 +175,7 @@ label {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 73%;
+    width: 315px;
 }
 
 .button > * {
