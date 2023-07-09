@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1E1E;
+}
+
+h2 {
+    color: #D4CCB6;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    color: #AFB6C2;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+input {
+    color: #AFB6C2;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+label {
+    color: #AFB6C2;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+.container {
+    display: flex;
+}
+
+.box1, .box2 {
+    width: 50%;
+    height: 100vh;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #24221F;
+    border-radius: 5px;
+    width: 80%;
+    height: 70%;
+}
+
+.login > * {
+    margin-left: 60px;
+}
+
+.box2 > * {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.inner2, .inner3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    width: 315px;
+    height: 40px;
+}
+
+.form-input {
+    width: 315px;
+    height: 40px;
+    padding-left: 40px;
+    border: 1px solid #AFB6C2;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+    position: absolute;
+    z-index: 10;
+}
+
+.form-input:focus {
+    border: 1px solid #FFC632;
+}
+
+.form > :nth-child(1) {
+    margin-left: 10px;
+}
+
+.form > :nth-child(3) {
+    margin-right: 10px;
+}
+
+.inner4 {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.checkbox {
+    display: flex;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox input[type=checkbox] + label{
+    background-position:0 -60px; /* Muda a posição do background só no checkbox */
+}
+
+.checkbox input[type=checkbox]:checked + label {
+    background-position:0 -90px;
+}
+
+.checkbox input[type="checkbox"] + label:before {
+    border: 1px solid #AFB6C2;
+    content: "";
+    display: inline-block;
+    margin-right: 1px;
+    height: 15px;
+    vertical-align: top;
+    width: 15px;
+    border-radius:4px;
+}
+
+.checkbox input[type="checkbox"]:checked + label:before {
+    background: #FFC632;
+    color: #24221F;
+    content: "\2713";
+    text-align: center;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+.yellow > * {
+    color: #FFC632;
+}
+
+.normal{
+    font-weight: normal;
+}
+
+.inner5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 73%;
+}
+
+.button > * {
+    background-color: #FFC632;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 315px;
+    height: 40px;
+}
+
+.button > * > h2 {
+    color: #1E1E1E;
+    font-size: small;
+}
+
+@media only screen and (max-width: 1000px) {
+    .box1 {
+        width: 100%;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+    .inner2, .inner3, .inner4, .inner5 {
+        width: 90%;
+    }
+
+    .login {
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        background-color: #1E1E1E;
+        margin-left: 0;
+        margin-top: 100px;
+        max-width: 100%;
+    }
+
+    .login > * {
+        margin-left: 20px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form > :nth-child(1) {
+        left: 9%;
+    }
+
+    .form > :nth-child(3) {
+        right: 9%;
+    }
+
+    .form-input {
+        width: 100%;
+    }
+
+    .checkbox {
+        background-color: #1E1E1E;
+    }
+
+    .checkbox label:before {
+        left: 5%;
+        top: 49.6%;
+    }
+
+    .check {
+        left: 5%;
+        top: 49.4%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .button > * {
+        width: 100%;
+    }
+}
